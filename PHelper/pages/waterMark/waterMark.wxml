@@ -1,0 +1,5 @@
+<view class='canvasView' style='height:{{imageHeight}}px'>
+  <canvas class='waterMarkCanvas' style='width:{{imageWidth}}px;' canvas-id="waterMarkCanves"></canvas>
+</view>
+  
+

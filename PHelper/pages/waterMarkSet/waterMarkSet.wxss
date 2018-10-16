@@ -1,0 +1,38 @@
+.inputType{
+  margin-left: 15px;
+  width: 80vw;
+}
+.inputView{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  flex-direction: row;
+  font-size: 14px;
+  
+}
+.titleView{
+  font-size: 16px;
+  height: 44px;
+  color: #515151;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+  border-bottom: 0.5px solid #e2e2e2;
+  
+}
+.chooseColorView{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+.colorView{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}

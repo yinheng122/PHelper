@@ -1,0 +1,11 @@
+/* pages/waterMark/waterMark.wxss */
+.canvasView{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.waterMarkCanvas{
+  background-color: black;
+  height: 100%;
+}

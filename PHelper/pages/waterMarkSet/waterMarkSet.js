@@ -1,11 +1,13 @@
-// pages/index/index.js
+// pages/waterMarkSet/waterMarkSet.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    colorArrF: ['black','whitesmoke','red','orange','yellow'],
+    colorArrS:['green','blue','cyan','purple','gray'],
+    currentColor:'black'
   },
 
   /**
@@ -65,32 +67,49 @@ Page({
   },
 
   /**
-  * 添加水印点击事件
+  * 生成水印图片
   */
-  waterMarkTap(){
-    wx.navigateTo({
-      url: '/pages/waterMarkSet/waterMarkSet',
+  toBuildTheWaterMarkPic(){
+    wx.chooseImage({
+      count: 1,
+      success: function (res) {
+        let tempFilePaths = res.tempFilePaths
+        wx.navigateTo({
+          url: '/pages/waterMark/waterMark?imageUrl=' + tempFilePaths,
+        })
+      },
     })
   },
 
   /**
-   * 文字添加点击事件
+   * 文字编辑完成的回调
    */
-  wordCombineTap(){
-
+  textFinish(e){
+    
   },
 
   /**
-   * 图片拼接点击事件
+   * 选择第一行的颜色
    */
-  combineTap(){
-
+  chooseColorF(e){
+    console.log(e)
+    let indexNum = e.currentTarget.id
+    var that = this
+    that.setData({
+      currentColor:indexNum
+    })
   },
 
   /**
-   * 个性名片
+   * 选择第二行的颜色
    */
-  visitingCard(){
-
+  chooseColorS(e){
+    console.log()
+    let indexNum = e.currentTarget.id
+    var that = this
+    that.setData({
+      currentColor:indexNum
+    })
   }
+
 })

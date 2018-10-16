@@ -11,3 +11,27 @@
   width: 240px;
   height: 98px;
 }
+.homeItemView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+.item{
+  width: 40vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemImage{
+  width: 100px;
+  height: 100px;
+}
+.itemText{
+  color: #515151;
+  font-size: 15px;
+}

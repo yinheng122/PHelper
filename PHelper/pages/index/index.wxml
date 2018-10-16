@@ -1,3 +1,24 @@
 <view class='homeImagesView'>
   <image src='/images/PHelper.png' class='BannarImage'></image>
 </view>
+
+<view class='homeItemView'>
+  <view class='item' bindtap='waterMarkTap'>
+    <image src='/images/waterMark.png' class='itemImage' style='width:90px; height:90px; margin-top:5px'></image>
+    <text class='itemText'>图片水印</text>
+  </view>
+  <view class='item'>
+    <image src='/images/wordCombine.png' class='itemImage'></image>
+    <text class='itemText'>文字添加</text>
+  </view>
+</view>
+<view class='homeItemView'>
+  <view class='item'>
+    <image src='/images/combine.png' class='itemImage'></image>
+    <text class='itemText'>图片拼接</text>
+  </view>
+  <view class='item'>
+    <image src='/images/visitingCard.png' class='itemImage'></image>
+    <text class='itemText'>个性名片</text>
+  </view>
+</view>
