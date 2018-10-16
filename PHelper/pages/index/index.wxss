@@ -1,0 +1,13 @@
+/* pages/index/index.wxss */
+.homeImagesView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.BannarImage{
+  width: 240px;
+  height: 98px;
+}

@@ -1,0 +1,3 @@
+<view class='homeImagesView'>
+  <image src='/images/PHelper.png' class='BannarImage'></image>
+</view>
