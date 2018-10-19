@@ -1,0 +1,44 @@
+<!--pages/wordFill/wordCombine.wxml-->
+<canvas-drag id="canvas-drag" graph="{{graph}}" style='width:{{imageWidth}}px;' height="600"></canvas-drag>
+
+<view class='btnView'>
+  <button class='addTextBtn' type='primary' bindtap='onAddImage'>
+    添加图片
+  </button>
+</view>
+
+<view class='titleView'>
+  编写文字
+</view>
+<view class='addText'>
+  <input class='textInput' placeholder='请输入需要加入的文字' maxlength="10" bindblur='textFinish'></input>
+</view>
+<view class='btnView'>
+  <button class='addTextBtn' type='primary' disabled = '{{canAdd}}'  bindtap='onAddText'>
+    添加文字
+  </button>
+</view>
+
+<view class='titleView'>
+  更换文字颜色
+</view>
+<view class='chooseColorView'>
+  <view wx:for='{{colorArrF}}' wx:for-item="itemColor" wx:for-index="idx" wx:key='FirstColor' bindtap='chooseColorF' id='{{itemColor}}'>
+    <view  wx:if='{{currentColor == itemColor}}' class='colorView' style='background-color:{{itemColor}}; border: 1px solid #515151; width:29px; height:29px'></view>
+    <view wx:else class='colorView' style='background-color:{{itemColor}};'>
+    </view>
+  </view>
+</view>
+<view class='chooseColorView'>
+  <view wx:for='{{colorArrS}}' wx:for-item="itemColor" wx:for-index="idx" wx:key='FirstColor' bindtap='chooseColorF' id='{{itemColor}}'>
+    <view  wx:if='{{currentColor == itemColor}}' class='colorView' style='background-color:{{itemColor}}; border: 1px solid #515151; width:29px; height:29px'></view>
+    <view wx:else class='colorView' style='background-color:{{itemColor}};'>
+    </view>
+  </view>
+</view>
+
+<view class='btnView' style='height:60px'>
+  <button class='addTextBtn' type='primary' disabled = '{{canAdd}}'  bindtap='onAddText'>
+    导出图片
+  </button>
+</view>

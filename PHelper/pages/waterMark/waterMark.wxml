@@ -1,5 +1,18 @@
 <view class='canvasView' style='height:{{imageHeight}}px'>
   <canvas class='waterMarkCanvas' style='width:{{imageWidth}}px;' canvas-id="waterMarkCanves"></canvas>
 </view>
+<view class='canvasView' style='height:{{imageHeight2}}px'>
+  <canvas class='waterMarkCanvas' style='width:{{imageWidth2}}px;' canvas-id="waterMarkCanves2"></canvas>
+</view>
+<view class='canvasView' style='height:{{imageHeight3}}px'>
+  <canvas class='waterMarkCanvas' style='width:{{imageWidth3}}px;' canvas-id="waterMarkCanves3"></canvas>
+</view>
+<view class='canvasView' style='height:{{imageHeight4}}px'>
+  <canvas class='waterMarkCanvas' style='width:{{imageWidth4}}px;' canvas-id="waterMarkCanves4"></canvas>
+</view>
   
-
+<view class='btnView'>
+  <button class='produceBtn' type='primary' bindtap='toSavePic'>
+    点击保存图片
+  </button>
+</view>

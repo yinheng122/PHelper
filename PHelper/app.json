@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/waterMark/waterMark",
-    "pages/waterMarkSet/waterMarkSet"
+    "pages/waterMarkSet/waterMarkSet",
+    "pages/wordCombine/wordCombine"
   ],
   "window": {
     "backgroundTextStyle": "light",

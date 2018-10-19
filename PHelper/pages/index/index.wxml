@@ -7,7 +7,7 @@
     <image src='/images/waterMark.png' class='itemImage' style='width:90px; height:90px; margin-top:5px'></image>
     <text class='itemText'>图片水印</text>
   </view>
-  <view class='item'>
+  <view class='item' bindtap='wordCombineTap'>
     <image src='/images/wordCombine.png' class='itemImage'></image>
     <text class='itemText'>文字添加</text>
   </view>

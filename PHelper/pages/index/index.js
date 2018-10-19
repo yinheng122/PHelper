@@ -77,7 +77,9 @@ Page({
    * 文字添加点击事件
    */
   wordCombineTap(){
-
+    wx.navigateTo({
+      url: '/pages/wordCombine/wordCombine',
+    })
   },
 
   /**

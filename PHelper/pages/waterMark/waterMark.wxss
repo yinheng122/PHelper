@@ -4,8 +4,21 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
 }
 .waterMarkCanvas{
   background-color: black;
   height: 100%;
+}
+.btnView{
+  height: 90px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produceBtn{
+  width: 80%;
+  height: 44px;
 }

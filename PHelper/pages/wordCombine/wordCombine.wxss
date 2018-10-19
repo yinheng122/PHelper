@@ -1,0 +1,48 @@
+/* pages/wordFill/wordCombine.wxss */
+.addText{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+.textInput{
+  margin-left: 15px;
+  width: 80vw;
+}
+.titleView{
+  font-size: 16px;
+  height: 44px;
+  color: #515151;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+  border-bottom: 0.5px solid #e2e2e2;
+}
+.btnView{
+  height: 45px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addTextBtn{
+  width: 80%;
+  height: 44px;
+}
+.chooseColorView{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+.colorView{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}

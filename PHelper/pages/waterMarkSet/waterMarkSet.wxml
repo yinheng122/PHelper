@@ -1,25 +1,58 @@
 <view class='titleView'>
   填写水印文字
+  <text class='needed'>*</text>
 </view>
 <view class='inputView'>
-  <input class = 'inputType' maxlength="10" placeholder='请输入你要填写的水印文字' bindblur='textFinish'>
+  <input class = 'inputType' maxlength="20" placeholder='请输入你要填写的水印文字' bindblur='textFinish'>
   </input>
 </view>
+
+<view class='titleView'>
+  选择字体大小
+</view>
+<view class='sliderView'>
+  <slider class='sliderClass' step = '1'  min="10" max="20" show-value='true'  bindchange="textSliderChange" value = '14' block-size='20'>
+  </slider>
+</view>
+
 <view class='titleView'>
   选择水印字颜色
 </view>
 <view class='chooseColorView'>
   <view wx:for='{{colorArrF}}' wx:for-item="itemColor" wx:for-index="idx" wx:key='FirstColor' bindtap='chooseColorF' id='{{itemColor}}'>
-    <view  wx:if='{{currentColor == itemColor}}' class='colorView' style='background-color:{{itemColor}}; border: 2px solid #515151'></view>
+    <view  wx:if='{{currentColor == itemColor}}' class='colorView' style='background-color:{{itemColor}}; border: 1px solid #515151; width:29px; height:29px'></view>
     <view wx:else class='colorView' style='background-color:{{itemColor}};'>
     </view>
   </view>
 </view>
 <view class='chooseColorView'>
   <view wx:for='{{colorArrS}}' wx:for-item="itemColor" wx:for-index="idx" wx:key='FirstColor' bindtap='chooseColorF' id='{{itemColor}}'>
-    <view  wx:if='{{currentColor == itemColor}}' class='colorView' style='background-color:{{itemColor}}; border: 2px solid #515151'></view>
+    <view  wx:if='{{currentColor == itemColor}}' class='colorView' style='background-color:{{itemColor}}; border: 1px solid #515151; width:29px; height:29px'></view>
     <view wx:else class='colorView' style='background-color:{{itemColor}};'>
     </view>
   </view>
+</view>
+
+<view class='titleView'>
+  选择水印的旋转角度
+</view>
+<view class='sliderView'>
+  <slider class='sliderClass' step = '1'  min="0" max="90" show-value='true'  bindchange="sliderChange" value = '45' block-size='20'>
+  </slider>
+</view>
+
+<view class='titleView'>
+  选择图片 (长按删除)
+  <text class='needed'>*</text>
+</view>
+<view class='chooseImageView'>
+  <image wx:for = '{{chooseImagesArr}}' wx:for-item = 'imageItem' wx:for-index = 'idx' wx:key = 'chooseImageKey' src='{{imageItem == ""?"/images/add.png":imageItem}}' id='{{idx}}' class='imagesItem' bindtap='{{imageItem == ""?"chooseImageTap":"previewImagesTap"}}' bindlongtap='deleteImages' mode='aspectFill'>
+  </image>
+</view>
+
+<view class='btnView'>
+  <button class='produceBtn' type='primary' disabled = '{{canProduce}}'  bindtap='toProducePic'>
+    点击生成图片
+  </button>
 </view>
 

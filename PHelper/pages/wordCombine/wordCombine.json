@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "文字添加",
+  "usingComponents": {
+    "canvas-drag": "/components/canvas-drag/index"
+  }
+}
