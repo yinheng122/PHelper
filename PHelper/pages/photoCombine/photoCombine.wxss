@@ -1,0 +1,17 @@
+/* pages/photoCombine/photoCombine.wxss */
+.photoCombine{
+  width: 100%;
+  background-color: black;
+}
+.btnView{
+  height: 90px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produceBtn{
+  width: 80%;
+  height: 44px;
+}

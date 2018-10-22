@@ -1,0 +1,11 @@
+<view class = 'modelView'>
+  <image class='modelImage' src='/images/model1.png' mode = 'aspectFit'>
+
+  </image>
+</view>
+
+<view class = 'modelView'>
+  <image class='modelImage' src='/images/model2.png' mode = 'aspectFit'>
+
+  </image>
+</view>

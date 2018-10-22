@@ -156,7 +156,6 @@ Page({
    * 选择第二行的颜色
    */
   chooseColorS(e) {
-
     let indexNum = e.currentTarget.id
     var that = this
     that.setData({

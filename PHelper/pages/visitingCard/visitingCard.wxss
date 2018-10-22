@@ -1,0 +1,13 @@
+/* pages/visitingCard/visitingCard.wxss */
+.modelView{
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modelImage{
+  width: 100%;
+  border-top: 0.5px solid #e2e2e2;
+  border-bottom: 0.5px solid #e2e2e2;
+}

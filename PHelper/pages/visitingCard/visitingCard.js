@@ -1,4 +1,4 @@
-// pages/index/index.js
+// pages/visitingCard/visitingCard.js
 Page({
 
   /**
@@ -62,48 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-  * 添加水印点击事件
-  */
-  waterMarkTap(){
-    wx.navigateTo({
-      url: '/pages/waterMarkSet/waterMarkSet',
-    })
-  },
-
-  /**
-   * 文字添加点击事件
-   */
-  wordCombineTap(){
-    wx.navigateTo({
-      url: '/pages/wordCombine/wordCombine',
-    })
-  },
-
-  /**
-   * 图片拼接点击事件
-   */
-  combineTap(){
-    wx.chooseImage({
-      count: 9,
-      success: function (res) {
-        let tempFilePaths = res.tempFilePaths
-        var imagesArrJson = JSON.stringify(tempFilePaths);
-        wx.navigateTo({
-          url: '/pages/photoCombine/photoCombine?imageUrls=' + imagesArrJson,
-        })
-      },
-    })
-  },
-
-  /**
-   * 个性名片
-   */
-  visitingCard(){
-      wx.navigateTo({
-        url: '/pages/visitingCard/visitingCard',
-      })
   }
 })

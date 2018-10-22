@@ -38,7 +38,7 @@
 </view>
 
 <view class='btnView' style='height:60px'>
-  <button class='addTextBtn' type='primary' disabled = '{{canAdd}}'  bindtap='onAddText'>
+  <button class='addTextBtn' type='primary' disabled = '{{canAdd}}'  bindtap='onExport'>
     导出图片
   </button>
 </view>

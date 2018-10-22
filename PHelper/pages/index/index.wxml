@@ -13,11 +13,11 @@
   </view>
 </view>
 <view class='homeItemView'>
-  <view class='item'>
+  <view class='item' bindtap='combineTap'>
     <image src='/images/combine.png' class='itemImage'></image>
     <text class='itemText'>图片拼接</text>
   </view>
-  <view class='item'>
+  <view class='item' bindtap='visitingCard'>
     <image src='/images/visitingCard.png' class='itemImage'></image>
     <text class='itemText'>个性名片</text>
   </view>

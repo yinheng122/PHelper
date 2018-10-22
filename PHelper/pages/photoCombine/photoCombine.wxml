@@ -1,0 +1,7 @@
+<canvas class='photoCombine' canvas-id="photoCombine" style = 'height:{{height}}px'>
+</canvas>
+<view class='btnView'>
+  <button class='produceBtn' type='primary' bindtap='toSavePic'>
+    点击保存图片
+  </button>
+</view>
