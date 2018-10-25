@@ -1,0 +1,37 @@
+<view class = 'imageView'>
+  <image class = 'userHeader' src = '{{haveChoosedUserIcon?userIcon:"/images/add.png"}}' mode = 'aspectFill' bindtap='addUserIcon'></image>
+  <text style='font-size:12px; color:#555555; margin-left:15px;' hidden='{{haveChoosedUserIcon?true:false}}'>点击添加图片,图片选择后请编辑裁剪成正方形</text>
+</view>
+
+<view class = 'inputCell' style='border-top: 8px solid #e2e2e2;'>
+  <input class = 'userInfoInput' placeholder = '请输入您的姓名' bindblur='textFill' id='name'>
+  
+  </input>
+</view>
+<view class = 'inputCell' style='border-bottom: 8px solid #e2e2e2;'>
+  <input class = 'userInfoInput' placeholder = '请输入您的职位' bindblur='textFill' id='position'>
+
+  </input>
+</view>
+
+<view class = 'inputCell'>
+  <input class = 'userInfoInput' placeholder = '请输入公司地址' bindblur='textFill' id='address'>
+
+  </input>
+</view>
+<view class = 'inputCell' style='border-bottom: 0.5px solid #e2e2e2;'>
+  <input class = 'userInfoInput' placeholder = '请输入联系电话' bindblur='textFill' id='phone'>
+
+  </input>
+</view>
+<view class = 'inputCell' style='border-bottom: 8px solid #e2e2e2;'>
+  <input class = 'userInfoInput' placeholder = '请输入联系邮箱' bindblur='textFill' id='email'>
+
+  </input>
+</view>
+
+<view class = 'btnView'>
+  <button class='produceBtn' type='primary' bindtap='toBuildVisitingCard'>
+    生成名片
+  </button>
+</view>

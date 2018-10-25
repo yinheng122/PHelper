@@ -5,7 +5,9 @@
     "pages/waterMarkSet/waterMarkSet",
     "pages/wordCombine/wordCombine",
     "pages/photoCombine/photoCombine",
-    "pages/visitingCard/visitingCard"
+    "pages/visitingCard/visitingCard",
+    "pages/visitingCardSet/visitingCardSet",
+    "pages/visitingCardProduct/visitingCardProduct"
   ],
   "window": {
     "backgroundTextStyle": "light",

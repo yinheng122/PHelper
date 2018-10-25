@@ -1,11 +1,11 @@
 <view class = 'modelView'>
-  <image class='modelImage' src='/images/model1.png' mode = 'aspectFit'>
+  <image class='modelImage' src='/images/model1.png' mode = 'aspectFit' bindtap='toVisitingCardSet' id='1'>
 
   </image>
 </view>
 
 <view class = 'modelView'>
-  <image class='modelImage' src='/images/model2.png' mode = 'aspectFit'>
+  <image class='modelImage' src='/images/model2.png' mode = 'aspectFit' bindtap='toVisitingCardSet' id='2'>
 
   </image>
 </view>

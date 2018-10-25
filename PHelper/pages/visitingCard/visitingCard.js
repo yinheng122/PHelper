@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 跳转到设置页面
+   */
+  toVisitingCardSet(e){
+    console.log(e)
+    let typeId = e.currentTarget.id
+    wx.navigateTo({
+      url: '/pages/visitingCardSet/visitingCardSet?modelType=' + typeId,
+    })
   }
 })

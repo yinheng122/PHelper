@@ -1,0 +1,7 @@
+<canvas class='visitingCardCanvas' canvas-id="visitingCardCanvas"></canvas>
+<view class = 'btnView'>
+  <button class='produceBtn' type='primary' bindtap='saveVisitingCard'>
+    生成名片
+  </button>
+</view>
+

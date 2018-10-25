@@ -1,0 +1,43 @@
+/* pages/visitingCardSet/visitingCardSet.wxss */
+.imageView{
+  width: 100%;
+  border-bottom: 0.5px solid #e2e2e2;
+  border-top: 0.5px solid #e2e2e2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+}
+.userHeader{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-left: 15px;
+  border: 0.5px solid #e2e2e2;
+}
+.inputCell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border-bottom: 0.5px solid #e2e2e2;
+  width: 100%;
+  font-size: 15px;
+}
+.userInfoInput{
+  height: 40px;
+  width: 90%;
+}
+.btnView{
+  height: 90px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produceBtn{
+  width: 80%;
+  height: 44px;
+}
+
