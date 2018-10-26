@@ -1,0 +1,10 @@
+<!--pages/sharePainting/sharePainting.wxml-->
+<view class='canvasView'>
+  <canvas canvas-id = "paintingCanvas" class = "paintingCanvas">
+  </canvas>
+</view>
+<view class='ZBView' bindtap='choosedAct'>
+  <image src='{{choosed == true?"/images/tick.png":"/images/circle.png"}}' class='choosedImage'>
+  </image>
+  是否使用印章
+</view>

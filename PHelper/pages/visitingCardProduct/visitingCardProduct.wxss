@@ -19,3 +19,11 @@
   width: 80%;
   height: 44px;
 }
+.btnShareView{
+  height: 45px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

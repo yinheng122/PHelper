@@ -1,0 +1,7 @@
+<view class = 'drawView' style='top:{{height-52}}px; left:{{width/2-25}}px;'>
+  <view class='drawBView' bindtap='toDraw'>
+    <image src = '/images/drawPic.png' class = 'drawImage'>
+    </image>
+  </view>
+</view>
+

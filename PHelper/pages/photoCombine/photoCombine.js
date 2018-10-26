@@ -115,6 +115,9 @@ Page({
       destHeight: obj.heightForCanvas * 2,
       canvasId: 'photoCombine',
       success(res) {
+        that.setData({
+          shareImagePath: res.tempFilePath
+        })
         wx.saveImageToPhotosAlbum({
           filePath: res.tempFilePath,
         })
@@ -124,5 +127,30 @@ Page({
         })
       }
     })
+  },
+
+  /**
+   * 分享图片到图片墙
+   */
+  toSharePic(){
+    let sw = wx.getSystemInfoSync().windowWidth
+    var that = this
+    var obj = that.data
+    wx.canvasToTempFilePath({
+      x: 0,
+      y: 0,
+      width: sw,
+      height: obj.heightForCanvas,
+      destWidth: sw * 2,
+      destHeight: obj.heightForCanvas * 2,
+      canvasId: 'photoCombine',
+      success(res) {
+        wx.navigateTo({
+          url: '/pages/sharePhoto/sharePhoto?imageUrl=' + res.tempFilePath,
+        })
+      }
+    })
+    
   }
+
 })

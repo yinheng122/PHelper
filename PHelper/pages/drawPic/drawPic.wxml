@@ -1,0 +1,38 @@
+<view class = 'canvasView'>
+  <view class = 'palette'>
+   <view class = 'cell' bindtap='choosePencil' style='{{drawStyle == "pencil"?"border: 1px solid #ffffff":""}}'>
+    <image class = 'cellImage' src = '/images/pencil.png'>
+    </image>
+   </view>
+   <view class = 'cell' bindtap='choosePen' style='{{drawStyle == "pen"?"border: 1px solid #ffffff":""}}'>
+    <image class = 'cellImage' src = '/images/pen.png'>
+    </image>
+   </view>
+   <view class = 'cell' bindtap='chooseBrush' style='{{drawStyle == "brush"?"border: 1px solid #ffffff":""}}'>
+    <image class = 'cellImageS' src = '/images/brush.png'>
+    </image>
+   </view>
+   <view class = 'cell' bindtap='chooseEraser' style='{{drawStyle == "eraser"?"border: 1px solid #ffffff":""}}'>
+    <image class = 'cellImageS' src = '/images/eraser.png'>
+    </image>
+   </view>
+   <view class = 'cell' wx:for = '{{colorArr}}' wx:for-item = "itemColor" wx:key = 'drawColor' bindtap='chooseColor' id='{{itemColor}}'>
+    <view class = 'cellColor' wx:if='{{currentColor == itemColor}}' style = 'background-color: {{itemColor}}; border-radius: 5vw;'>
+    </view>
+    <view class = 'cellColor' wx:else style = 'background-color: {{itemColor}};'>
+    
+    </view>
+   </view>
+  </view>
+  <view class = 'canvasArea'>
+    <canvas canvas-id = "myCanvas" class = "myCanvas"
+              disable-scroll = "false"
+              bindtouchstart = "touchStart"
+              bindtouchmove = "touchMoves"
+              bindtouchend = "touchEnd">
+    </canvas>
+  </view>
+</view>
+<image src = '/images/savePaint.png' class = 'savePaint' bindtap = 'savePaint'>
+
+</image>

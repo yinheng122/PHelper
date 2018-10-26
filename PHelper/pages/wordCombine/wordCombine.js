@@ -178,5 +178,5 @@ Page({
       .catch((e) => {
         console.error(e);
       })
-  },
+  }
 })

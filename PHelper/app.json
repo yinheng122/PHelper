@@ -7,12 +7,42 @@
     "pages/photoCombine/photoCombine",
     "pages/visitingCard/visitingCard",
     "pages/visitingCardSet/visitingCardSet",
-    "pages/visitingCardProduct/visitingCardProduct"
+    "pages/visitingCardProduct/visitingCardProduct",
+    "pages/sharePhoto/sharePhoto",
+    "pages/socialCircles/socialCircles",
+    "pages/about/about",
+    "pages/draw/draw",
+    "pages/drawPic/drawPic",
+    "pages/sharePainting/sharePainting"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "图片帮手",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#e6e6e6",
+    "selectedColor": "#707070",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/work.png",
+        "selectedIconPath": "/images/workSelected.png",
+        "text": "编辑图片"
+      },
+      {
+        "pagePath": "pages/socialCircles/socialCircles",
+        "iconPath": "/images/share.png",
+        "selectedIconPath": "/images/shareSelected.png",
+        "text": "图片墙"
+      },
+      {
+        "pagePath": "pages/draw/draw",
+        "iconPath": "/images/draw.png",
+        "selectedIconPath": "/images/drawSelected.png",
+        "text": "涂鸦"
+      }
+    ]
   }
 }

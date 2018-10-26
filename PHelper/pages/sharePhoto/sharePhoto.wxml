@@ -1,0 +1,8 @@
+<view class="shareTextView">
+  <textarea class='shareTextArea' bindblur="bindTextAreaBlur" auto-height placeholder="填写您要分享的话" />
+</view>
+<view class = 'btnView'>
+  <button class='produceBtn' type='primary' bindtap='sharePic'>
+    分享到照片墙
+  </button>
+</view>

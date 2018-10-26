@@ -4,4 +4,9 @@
     生成名片
   </button>
 </view>
+<view class = 'btnShareView'>
+  <button class='produceBtn' type='primary' bindtap='toSharePic'>
+    分享到照片墙
+  </button>
+</view>
 

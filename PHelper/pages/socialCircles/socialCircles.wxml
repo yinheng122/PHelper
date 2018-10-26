@@ -1,0 +1,13 @@
+<view class = 'section' wx:for = '{{dataArr}}' wx:for-item="item" wx:key="cellShareKey" wx:for-index="idx">
+  <view class = 'cell' style='{{idx==0?"margin-top:0px;":"margin-top:12px;"}}'>
+    <image src='{{item.shareImageUrl}}' class='cellImage' mode = 'aspectFill'>
+    </image>
+    <view class='cellTextView'>
+      <view class='cellText'>
+      {{item.shareStr}}
+      </view>
+    </view>
+  </view>
+</view>
+<wux-floating-button position="bottomRight" theme="dark" buttons="{{ buttons }}" bind:click="buttonClicked" />
+

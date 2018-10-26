@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "图片墙",
+  "usingComponents": {
+    "wux-floating-button": "../../floating-button/index"
+  }
+}

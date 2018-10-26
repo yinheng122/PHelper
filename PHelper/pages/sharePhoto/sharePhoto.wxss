@@ -1,14 +1,14 @@
-/* pages/waterMark/waterMark.wxss */
-.canvasView{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* pages/sharePhoto/sharePhoto.wxss */
+.shareTextView{
   width: 100%;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #e2e2e2;
+  height: 100px;
 }
-.waterMarkCanvas{
-  background-color: black;
-  height: 100%;
+.shareTextArea{
+  width: 90%;
 }
 .btnView{
   height: 90px;

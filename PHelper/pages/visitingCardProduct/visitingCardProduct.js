@@ -150,6 +150,30 @@ Page({
         }, 1000)
       }
     })
+  },
+
+  /**
+  * 分享图片到图片墙
+  */
+  toSharePic() {
+    let sw = wx.getSystemInfoSync().windowWidth
+    var that = this
+    var obj = that.data
+    wx.canvasToTempFilePath({
+      x: 0,
+      y: 0,
+      width: sw,
+      height: sw * 0.6,
+      destWidth: sw * 2,
+      destHeight: sw * 1.2,
+      canvasId: 'visitingCardCanvas',
+      success(res) {
+        wx.navigateTo({
+          url: '/pages/sharePhoto/sharePhoto?imageUrl=' + res.tempFilePath,
+        })
+      }
+    })
+
   }
 
 })

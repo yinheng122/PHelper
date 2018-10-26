@@ -5,3 +5,8 @@
     点击保存图片
   </button>
 </view>
+<view class='btnView' style='height:50px; margin-top:10px;'>
+  <button class='produceBtn' type='primary' bindtap='toSharePic'>
+    分享图片到图片墙
+  </button>
+</view>
