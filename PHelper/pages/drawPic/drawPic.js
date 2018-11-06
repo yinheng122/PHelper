@@ -1,4 +1,5 @@
 // pages/drawPic/drawPic.js
+const ctx = wx.createCanvasContext('myCanvas')
 Page({
 
   /**
@@ -17,7 +18,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let sw = wx.getSystemInfoSync().windowWidth
+    let sh = wx.getSystemInfoSync().windowHeight
+    ctx.setFillStyle('white')
+    ctx.fillRect(0, 0, sw * 0.9, sh)
+    ctx.draw()
   },
 
   /**

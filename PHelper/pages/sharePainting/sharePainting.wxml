@@ -8,3 +8,19 @@
   </image>
   是否使用印章
 </view>
+<view class='sealView' style='{{choosed?"":"visibility:hidden"}}' >
+  <canvas canvas-id='sealCanvas' class='sealCanvas'>
+  </canvas>
+  <view class='sealInputView'>
+    <input class='sealInput' bindblur='sealInputWord' placeholder='请输入印章文字' maxlength='4'>
+    </input>
+    <view class='sealBtn' bindtap='certainAct'>
+    确定
+    </view>
+  </view>
+</view>
+<view class = 'btnView'>
+  <button class='produceBtn' type='primary' bindtap='sharePainting'>
+    分享
+  </button>
+</view>

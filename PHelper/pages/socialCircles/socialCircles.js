@@ -141,5 +141,16 @@ Page({
         },
       })
     }
+  },
+
+  /**
+   * 点击看大图 
+   */
+  toDetail(e){
+    var imageUrl = e.currentTarget.id
+    var imageArr = [imageUrl]
+    wx.previewImage({
+      urls: imageArr,
+    })
   }
 })

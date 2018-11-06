@@ -1,3 +1,5 @@
 {
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
   "navigationBarTitleText": "涂鸦"
 }

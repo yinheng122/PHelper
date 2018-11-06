@@ -1,5 +1,5 @@
 <view class = 'section' wx:for = '{{dataArr}}' wx:for-item="item" wx:key="cellShareKey" wx:for-index="idx">
-  <view class = 'cell' style='{{idx==0?"margin-top:0px;":"margin-top:12px;"}}'>
+  <view class = 'cell' style='{{idx==0?"margin-top:0px;":"margin-top:12px;"}}' bindtap='toDetail' id='{{item.shareImageUrl}}'>
     <image src='{{item.shareImageUrl}}' class='cellImage' mode = 'aspectFill'>
     </image>
     <view class='cellTextView'>

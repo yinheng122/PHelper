@@ -9,6 +9,7 @@
   width: 45vw;
   height: 50vh;
   border: 0.5px solid #e2e2e2;
+  background-color: #fff;
 }
 .ZBView{
   width: 100%;
@@ -24,4 +25,68 @@
   height: 20px;
   margin-left: 15px;
   margin-right: 15px;
+}
+.sealInput{
+  width: 60%;
+  margin-left: 15px;
+  height: 40px;
+}
+.sealInputView{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 0.5px solid #e2e2e2;
+  border-top: 0.5px solid #e2e2e2;
+  margin-top: 15px;
+}
+.sealView{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.sealCanvas{
+  width: 100px;
+  height: 100px;
+}
+.sealBtn{
+  width: 20%;
+  height: 40px;
+  background-color: #707070;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chooseSealView{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.chooseSealSub{
+  width: 110px;
+  height: 100px;
+
+}
+.sealImage{
+  width: 100px;
+  height: 100px;
+}
+.btnView{
+  height: 90px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produceBtn{
+  width: 80%;
+  height: 44px;
 }
